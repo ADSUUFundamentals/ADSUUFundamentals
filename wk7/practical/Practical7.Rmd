@@ -147,7 +147,7 @@ ssize_cal <- function(k, p){
   round((10*k)/p)
 }
 
-ssize_cal(3, 0.38)
+ssize_cal(2, 0.38)
 
 #We have many more than this in our data so the sample size is large enough.*
 ```
@@ -208,7 +208,7 @@ ggplot(aes(Age, logit))+
 
 ## No influential values or outliers
 
-Influential values are extreme individual data points that can affect the fit1 of the logistic regression model. They can be visualised using Cook's distance and the Residuals vs Leverage plot. 
+Influential values are extreme individual data points that can affect the fit of the logistic regression model. They can be visualised using Cook's distance and the Residuals vs Leverage plot. 
 
 9. __Use the `plot()` function to visualise the outliers and influential points of `fit2`.__
 
@@ -241,7 +241,7 @@ Lastly, it is important to note that the assumptions of a linear regression do n
 * constant, finite error variance
 * normally distributed errors
 
-However, deviance residuals are useful for determining if the individual points are not fit1 well by the model. 
+However, deviance residuals are useful for determining if the individual points are not fit well by the model. 
 
 *Hint: you can use some of the code from the lecture for the next few questions.*
 
